@@ -26,12 +26,6 @@ extra_damage = _extra_damage;
 extraPower_index = _extraPower_index;
 }
 
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
-
 void modify_extra_damage(int add_extra_damage)
 {
 extra_damage = add_extra_damage;
@@ -75,12 +69,6 @@ Saving(int _moreSave) : wallet("Saving", 0, 0)
 moreSave = _moreSave;
 }
 
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
-
 void saving_per_round(int money_add)
 {
 total_money = total_money + money_add + 0.2*money_add;
@@ -123,12 +111,6 @@ credit_amount = credit_amount - new_credit;
 void print_the_field(){
 cout<< "The field is diplayed here"<<endl;
 cout<<"tt_______________________________"<<endl;
-
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
 
 cout<<"tt| | | | | |n"<<endl;
 cout<<"tt| "<<table[0][0]<<" | "<<table[0][1]<<" | "<<table[0][2]<<" |
@@ -177,12 +159,6 @@ enemy_position1 = table[i1][j1];
 enemy_position2 = table[i2][j2];
 enemy_position3 = table[i3][j3];
 
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
-
 }
 enemy_positions.push_back(enemy_position1);
 enemy_positions.push_back(enemy_position2);
@@ -225,12 +201,6 @@ cout<<"Killed!"<<endl;
 else{
 cout<<"Miss!!!"<<endl;
 }
-
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
 
 int bot_attack_pos = -1;
 int health_value2, index1, index2;
@@ -278,12 +248,6 @@ if(health_value2 <= 0)
 cout<<"You're shooter is dead"<<endl;
 player_third_position = -1;
 
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
-
 }
 }
 }
@@ -327,12 +291,6 @@ int attack_column1;
 cin>>attack_row1;
 cin>> attack_column1;
 int attacked_position_value = table[attack_row1-1][attack_column1-1];
-
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
 
 health_value = position_health[attack_row1-1][attack_column1-1];
 int attack_row2;
@@ -378,12 +336,6 @@ cout<<"Miss!!!"<<endl;
 if(locate_in_vector(bot_positions, attacked_position_value2) == true)
 {
 int new_health3 = health_value_third - player_damage;
-
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
 
 position_health[attack_row3-1][attack_column3-1] = new_health3;
 if(new_health <= 0)
@@ -431,12 +383,6 @@ player_second_position = -1;
 }
 else if(player_third_position == bot_attack_pos)
 
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
-
 {
 cout<<"The enemy shooted you in position number "<<bot_attack_pos<<"!"<<endl;
 health_value2 = health_value2 - bot_damage;
@@ -479,11 +425,6 @@ cur->bind(1, weapon);
 while(cur->step()){
 int damage_weapon_2_player = get_int(1);
 
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
 
 }
 return damage_weapon_2_player;
@@ -511,77 +452,3 @@ CREATE TABLE Weapons3(
 weapon_name VARCHAR(20) PRIMARY KEY NOT NULL,
 damage NUMBER(3) NOT NULL
 );
-INSERT INTO Weapons1
-VALUES ('Eagle', 20);
-INSERT INTO Weapons1
-VALUES ('Fiveseven', 14);
-INSERT INTO Weapons1
-VALUES ('USP', 16);
-INSERT INTO Weapons1
-VALUES ('P250', 9);
-INSERT INTO Weapons1
-VALUES ('Glock', 17);
-INSERT INTO Weapons1
-
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
-
-VALUES ('Revolver', 19);
-INSERT INTO Weapons1
-VALUES ('Tec', 12);
-INSERT INTO Weapons1
-VALUES ('Dual', 14);
-INSERT INTO Weapons1
-VALUES ('CZ', 12);
-INSERT INTO Weapons1
-VALUES ('Alfa', 13);
-INSERT INTO Weapons2
-VALUES ('UMP', 28);
-INSERT INTO Weapons2
-VALUES ('PP', 22);
-INSERT INTO Weapons2
-VALUES ('MP5', 22);
-INSERT INTO Weapons2
-VALUES ('MAC', 23);
-INSERT INTO Weapons2
-VALUES ('P90', 20);
-INSERT INTO Weapons2
-VALUES ('MP7', 19);
-INSERT INTO Weapons2
-VALUES ('Nova', 25);
-INSERT INTO Weapons2
-VALUES ('XM10', 27);
-INSERT INTO Weapons2
-VALUES ('Sawedof', 24);
-INSERT INTO Weapons2
-VALUES ('DBS', 29);
-INSERT INTO Weapons3
-VALUES ('AK47', 36);
-INSERT INTO Weapons3
-VALUES ('M4', 30);
-INSERT INTO Weapons3
-
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
-
-VALUES ('AUG', 28);
-INSERT INTO Weapons3
-VALUES ('Famas', 30);
-INSERT INTO Weapons3
-VALUES ('SG', 30);
-INSERT INTO Weapons3
-VALUES ('Negev', 20);
-INSERT INTO Weapons3
-VALUES ('AWP', 45);
-INSERT INTO Weapons3
-VALUES ('Scar', 40);
-INSERT INTO Weapons3
-VALUES ('M16', 28);
-INSERT INTO Weapons3
-VALUES ('Beril', 27);
