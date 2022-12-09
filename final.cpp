@@ -28,12 +28,7 @@ int i,j;
 srand ( (unsigned)time( NULL ) );
 for ( i = 0; i <= 4 ;i++){
 for( j = 0; j <= 4; j++){
-
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
+ Section of the 4007CEM Aula.
 
 int d = rand() %100 + 10;
 damage_map[i][j] = d;
@@ -68,12 +63,6 @@ string weapon2 = cin_weapons_options();
 int damage_weapon2_player = get_damage_of_weapon2(weapon2);
 loudout Loudout2(weapon2, damage_weapon2_player, 0, 0);
 cout<<"Your choise list for the third weapon"<<endl;
-
-Faculty of Engineering, Environment and Computing
-4007CEM Computer Science Activity Led Learning Project 2
-Assessment Template
-
-Details on the assessment are presented in the Assessment Brief in the Assessment Section of the 4007CEM Aula.
 
 cur->set_sql("SELECT weapon_name AS 'Your weapons' FROM Weapons3");
 cur->prepare();
